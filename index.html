@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- <script>
+function myFunction() {
+    document.getElementById("demo4").innerHTML = "Paragraph changed.";
+}
+</script> -->
+</head>
+<body>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can change HTML content.</p>
+
+    <!-- <button type = "button"
+    onclick = 'document.getElementById("demo").innerHTML = "Hello Javascript!"'>Click Me!</button>
+     -->
+     <button type = "button"
+     onclick="document.getElementById('demo').style.fontSize = '50px'".innerHTML = 'Hello JavaScript!'">
+    Click Me!
+    </button>
+
+    <p> In this case JavaScript chnages the value of the src (source) attribute of an image.</p>
+
+    <button onclick="document.getElementById('myImage').src='images/lightbulbon.png'"> Turn on the light</button>
+
+    <img id ="myImage" src = "images/lightbulboff.png" style="width:100px">
+
+    <button onclick = "document.getElementById('myImage').src='images/lightbulboff.png'">Turn off the light</button>
+
+
+    <!-- Changing the style of an HTMl elemnt,  is a variant of changing an HTML attribute-->
+    <!-- JavaScript can change HTML STYLES (CSS)-->
+
+    <!-- document.getElementById("demo").style.fontSize = "35px"; -->
+
+
+    <!-- JavaScript can hide elements -->
+
+    <p id="demo1">JavaScript can hide HTML elements.</p>
+
+    <button type="button"
+    onclick="document.getElementById('demo1').style.display='none'">Click Me to hide!</button>
+
+    <button type="button"
+    onclick="document.getElementById('demo1').style.display='block'">Click to unhide!
+
+    </button>
+    <!-- JavaScript can show elements -->
+
+    <p id="demo2" style="display:none">Hello JavaScript!</p>
+
+    <button type="button"
+    onclick="document.getElementById('demo2').style.display='block'">Click Me!
+    </button>
+
+    <button type="button"
+    onclick="document.getElementById('demo2').style.display='none'">Click Me To hide!!
+    </button>
+
+    <!-- JavaScript is inserted between <script>...</script>  in HTML-->
+
+    <h2>JavaScript in Body</h2>
+
+    <p id="demo3"></p>
+
+    <script>
+        document.getElementById("demo3").innerHTML =
+        "My First JavaScript";
+    </script>
+
+    <!-- <script>
+    function myFunction() {
+        document.getElementById("demo5").innerHTML = "Paragraph changed.";
+    }
+    </script> -->
+
+    <script src="js/intro.js"></script>
+
+    <p>This example links to "intro,.js".</p>
+    <p>(myFunction is stored in "intro.js)</p>
+
+    <h2>Demo JavaScript in Head</h2>
+
+    <p id="demo6">A Paragraph</p>
+    <button type="button"
+    onclick="myFunction()">Try it
+    </button>
+
+    <p id="demo7"></p>
+    <script>
+        document.getElementById("demo7").innerHTML = 5*2;
+    </script>
+
+    <p>Never call document.write after the document has finished loading. It will overwrite the whole document.</p>
+    <p class="">Using document.write() after an HTML document is loaded, will delete all existing HTML!</p>
+  
+    <script>
+        document.write(5 + 6);
+    </script>
+
+    <h2> My First Web Page</h2>
+    <p>My first paragraph</p>
+
+    <button type="button"
+    onclick="document.write(5+6)">Try it
+    </button>
+
+    <p>There the document.write() method should only be used for testing</p>
+
+
+</body>
+</html>
