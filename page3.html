@@ -52,6 +52,73 @@
         document.getElementById("demo5").innerHTML = price + " " + carname + " " + person
     </script>
 
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+
+    <script>
+        //You can create a const object:
+        const car = {type:"Fiat", model: "500", color: "white"};
+
+        // You can change a property:
+        car.color = "red";
+
+        // You can add a property:
+        car.owner = "Johnson";
     
+        // Display
+        document.getElementById("demo6").innerHTML = "Car owner is " + car.owner;
+        document.getElementById("demo7").innerHTML = "Car type is " + car.type;
+    </script>
+
+    <p id="demo8"></p>
+
+    <script>
+        try {
+            const car = {type:"Fiat",
+        model: "500", color: "white"};
+        car = {type:"Volvo", model: "EX60", color:"red"};
+        }
+        catch (err){
+
+            document.getElementById("demo8").innerHTML = err;
+        }
+    </script>
+
+    <p id="demo9"></p>
+    <script>
+        let text1 = "A";
+        let text2 = "B";
+        let result = text1 < text2;
+        document.getElementById("demo9").innerHTML = "Is A less than B? " + result;
+    </script>
+
+
+    <p id = "demo10"></p>
+    <script>
+        let text3 = "What a very ";
+        text3 += "nice day";
+        document.getElementById("demo10").innerHTML = text3;
+    </script>
+
+    <p id = "demo11"></p>
+    <script>
+        let num = 1;
+        num = 3;
+        document.getElementById("demo10").innerHTML = num;
+    </script>
+
+    <p id = "demo12"></p>
+    <script>
+        const James = {
+            firstName: "James",
+            lastName: "Lin"
+        }; // Object
+
+        alert(James.lastName);
+
+    </script>
+    
+
+
 </body>
 </html>
