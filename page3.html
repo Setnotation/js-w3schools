@@ -134,14 +134,25 @@
     </script>
 
     <p id = "demo15"></p>
+    <p id = "demo16"></p>
+    <p id = "demo17"></p>
     <script>
         //JavaScript Objects
-        const james = {firstName:"John", lastName: "Doe", age: 21, eyeColor:"brown"}
+        const james = {firstName:"James", lastName: "Doe", age: 21, eyeColor:"brown"}
 
-        document.getElementById("demo14").innerHTML = cars[1]
+        document.getElementById("demo15").innerHTML = james.firstName + " is " + james.age + " years old.";
 
+        document.getElementById("demo16").innerHTML = typeof "" + "<br>" +
+        typeof "John" + "<br>" +
+        typeof "John Doe";
+
+        let car1; // Value is undefined, type is undefined
+        document.getElementById("demo17").innerHTML = car1 + "<br>" + 
+        typeof car1;
+
+        // Line break is "<br>"
     </script>
-    
+
 
 
 </body>
