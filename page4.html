@@ -46,6 +46,14 @@
     <p id="demo4"></p>
 
     <p id="demo5"></p>
+
+    <p>Outside myFunction() carName is undefined.</p>
+
+    <p id="demo6"></p>
+
+    <p id="demo61"></p>
+
+    
  <script>
         function toCelsius(f) {
             return (5/9) * (f-32);
@@ -62,9 +70,19 @@
 
         document.getElementById("demo5").innerHTML = text1
 
+        myFunction();
 
+        function myFunction() {
+            let carName = "Volvo";
+            document.getElementById("demo6").innerHTML =
+            typeof carName + " " + carName;
+        }
+
+        document.getElementById("demo61").innerHTML = typeof carName;
 
     </script>
+
+    
 
 
 
