@@ -87,10 +87,19 @@
          is?</button>
 
     <p id="demo62"></p>
+    <p id="demo63"></p>
     <!---Changes the content of its own element rather than the content with id = "demo62"-->
     <button onclick=
     "this.innerHTML=Date()">The time is?</button>
-    
+    <!---Event attributes calling functions-->
+
+    <button onclick="displayDate()">The time is?</button>
+
+    <script>
+        function displayDate() {
+            document.getElementById("demo63").innerHTML = Date();
+        }
+    </script>
 
 
 
